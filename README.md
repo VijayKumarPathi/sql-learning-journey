@@ -28,7 +28,21 @@ I am learning SQL using MySQL and practicing SQL concepts through hands-on exerc
 - ROLLBACK TO SAVEPOINT
 - COMMIT
 - AUTOCOMMIT
-  
-## Goal
 
-To improve my SQL skills through daily practice and real-world problems.
+Day 04 – DCL (Data Control Language)
+CREATE USER
+GRANT
+REVOKE
+Managing database privileges
+User access control
+
+🛠️ Tools Used
+MySQL
+MySQL Workbench
+Git
+GitHub
+🎯 Goal
+
+To improve my SQL skills through daily hands-on practice and develop practical database knowledge for software development and technical interviews.
+
+
