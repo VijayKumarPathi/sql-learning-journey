@@ -56,7 +56,14 @@ I am learning SQL using **MySQL** and practicing SQL concepts through hands-on e
 * GROUP BY
 * HAVING
 * LIMIT
-* DISTINCT
+* Combining Multiple Clauses
+* Aggregate Functions with GROUP BY
+
+  * COUNT()
+  * SUM()
+  * AVG()
+  * MAX()
+  * MIN()
 
 ## 🛠️ Tools Used
 
