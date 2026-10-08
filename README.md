@@ -5,72 +5,78 @@ I am learning SQL using **MySQL** and practicing SQL concepts through hands-on e
 ## 📚 Learning Progress
 
 ### Day 1 - DDL (Data Definition Language)
-
-* CREATE
-* ALTER
-* MODIFY
-* RENAME
-* TRUNCATE
-* DROP
-* SHOW
-* DESC
+- CREATE
+- ALTER
+- MODIFY
+- RENAME
+- TRUNCATE
+- DROP
+- SHOW
+- DESC
 
 ### Day 2 - DML (Data Manipulation Language)
-
-* INSERT
-* UPDATE
-* DELETE
-* IFNULL
-* SELECT
+- INSERT
+- UPDATE
+- DELETE
+- IFNULL
+- SELECT
 
 ### Day 3 - TCL (Transaction Control Language)
-
-* START TRANSACTION
-* SAVEPOINT
-* ROLLBACK TO SAVEPOINT
-* COMMIT
-* AUTOCOMMIT
+- START TRANSACTION
+- SAVEPOINT
+- ROLLBACK TO SAVEPOINT
+- COMMIT
+- AUTOCOMMIT
 
 ### Day 4 - DCL (Data Control Language)
-
-* CREATE USER
-* GRANT
-* REVOKE
-* Managing Database Privileges
-* User Access Control
+- CREATE USER
+- GRANT
+- REVOKE
+- Managing Database Privileges
+- User Access Control
 
 ### Day 5 - SQL Operators
-
-* Arithmetic Operators
-* Comparison Operators
-* Logical Operators
-* BETWEEN
-* IN
-* LIKE
-* IS NULL
+- Arithmetic Operators
+- Comparison Operators
+- Logical Operators
+- BETWEEN
+- IN
+- LIKE
+- IS NULL
+- NOT
+- `<>` and `!=`
 
 ### Day 6 - SQL Clauses
+- WHERE
+- ORDER BY
+- GROUP BY
+- HAVING
+- LIMIT
+- Combining Multiple Clauses
+- Aggregate Functions
+  - COUNT()
+  - SUM()
+  - AVG()
+  - MAX()
+  - MIN()
 
-* WHERE
-* ORDER BY
-* GROUP BY
-* HAVING
-* LIMIT
-* Combining Multiple Clauses
-* Aggregate Functions with GROUP BY
-
-  * COUNT()
-  * SUM()
-  * AVG()
-  * MAX()
-  * MIN()
+### Day 7 - SQL Functions
+- Creating User-Defined Functions
+- Function Parameters
+- RETURNS
+- BEGIN and END
+- IF
+- ELSEIF
+- ELSE
+- Conditional Logic
+- Calling User-Defined Functions
 
 ## 🛠️ Tools Used
 
-* MySQL
-* MySQL Workbench
-* Git
-* GitHub
+- MySQL
+- MySQL Workbench
+- Git
+- GitHub
 
 ## 🎯 Goal
 
@@ -78,12 +84,13 @@ To improve my SQL skills through daily hands-on practice and develop practical d
 
 ## 📈 Progress
 
-* ✅ DDL
-* ✅ DML
-* ✅ TCL
-* ✅ DCL
-* ✅ SQL Operators
-* ✅ SQL Clauses
+- ✅ DDL
+- ✅ DML
+- ✅ TCL
+- ✅ DCL
+- ✅ SQL Operators
+- ✅ SQL Clauses
+- ✅ SQL Functions
 
 ---
 
