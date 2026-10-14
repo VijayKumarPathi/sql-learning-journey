@@ -71,6 +71,26 @@ I am learning SQL using **MySQL** and practicing SQL concepts through hands-on e
 - Conditional Logic
 - Calling User-Defined Functions
 
+## ER Diagram and Key Relationships
+
+Practicing SQL database design using primary keys and foreign keys.
+
+### Topics Covered
+- Primary keys
+- Foreign keys
+- Creating related tables
+- Establishing table relationships
+- Database design practice
+
+### Practice Databases
+- Pizza Counter
+- Teacher and Student Management
+- College Management
+- Banking System
+- Vehicle Reservation System
+
+Folder: `ER_Diagrams/`
+
 ## 🛠️ Tools Used
 
 - MySQL
