@@ -73,3 +73,36 @@ create table orderheader(orderid int primary key,order_date date,order_time time
 create table payment(paymentid int primary key,pdate date,type_of_payment varchar(30),orderid int,customerid int,total int,foreign key(orderid) references orderheader(orderid));
 create table pizza(pizzaid int primary key,name_of_pizza varchar(30),specification varchar(30),price int);
 create table orderline(orderid int,lineid int,pizzaid int,quantity varchar(30),foreign key(orderid) references orderheader(orderid),foreign key(lineid) references pizza(pizzaid));
+
+create database car_dealership;
+use car_dealership;
+create table salesperson(salesperson_id int primary key,lastname varchar(30),firstname varchar(30));
+create table car(car_id int primary key,serial_number int,make varchar(30),model varchar(30),colour varchar(30),year_of_car year,car_for_sale varchar(30));
+create table customer(customer_id int primary key,lastname varchar(30),firstname varchar(30),phone_number bigint,address varchar(30),city varchar(30),state varchar(30),country varchar(30),postal_code int);
+create table sales_invoice(invoice_id int primary key,invoice_number int,date_of_sale date,car_id int,customer_id int,salesperson_id int,foreign key(car_id) references car(car_id),foreign key(customer_id) references  customer(customer_id),foreign key(salesperson_id) references salesperson(salesperson_id));
+create table service_ticket(service_ticket_id int primary key,service_ticket_number int,car_id int,customer_id int,date_received date,comments varchar(30),date_returned_to_customer date,foreign key(car_id) references car(car_id),foreign key(customer_id) references customer(customer_id));
+create table mechanic(mechanic_id int primary key,lastname varchar(30),firstname varchar(30));
+create table service(service_id int primary key,service_name varchar(30),hourly_rate int);
+create table service_mechanic(service_mechanic_id int primary key,service_ticket_id int,service_id int,mechanic_id int,hours time,comments varchar(30),rate varchar(30),foreign key(service_ticket_id) references service_ticket(service_ticket_id),foreign key(service_id) references service(service_id),foreign key(mechanic_id) references mechanic(mechanic_id));
+create table parts(parts_id int primary key,part_number int,description_of_part varchar(30),purchase_price int,retail_price int);
+create table parts_used(parts_used_id int primary key,parts_id int,service_ticket_id int,number_used int,price int,foreign key(parts_id) references parts(parts_id),foreign key(service_ticket_id) references service_ticket(service_ticket_id));
+
+create database job_process;
+use job_process;
+create table step(id int primary key,step_code varchar(30),name_of_the_step varchar(30));
+create table process(id int primary key,process_code varchar(30),description_process varchar(30),recruiter_id int);
+create table process_step(id int primary key,step_id int,process_id int,status_of_process_step varchar(30),priority int,foreign key(step_id) references step(id),foreign key(id) references process(id));
+create table job_category(id int primary key,code varchar(30),job_name varchar(30),job_description varchar(30));
+create table job_platform(id int primary key,code varchar(30),job_name varchar(30),job_description varchar(30));
+create table job_position(id int primary key,code varchar(30),position_name varchar(30),job_description varchar(30));
+create table job_organization(id int primary key,code varchar(30),job_name varchar(30),job_description varchar(30));
+create table job(id int primary key,code varchar(30),name varchar(30),description varchar(30),date_published datetime,job_start_date datetime,no_of_vacancies int,job_category_id int,position_id int,job_platform_id int,org_id int,process_id int,foreign key(job_category_id) references job_category(id),foreign key(position_id) references job_position(id),foreign key(job_platform_id) references job_platform(id),foreign key(org_id) references job_organization(id),foreign key(process_id) references process(id));
+
+create database mobile_management_system;
+use mobile_management_system;
+create table customer_info(customer_id int primary key,customer_name varchar(30),address varchar(30),mobile bigint,email varchar(30));
+create table distributor(distributor_id int primary key,distributor_name varchar(30),address varchar(30),mobile bigint,email varchar(30));
+create table mobile_master(IME_no int primary key,model_name varchar(30),manufacturer varchar(30),date_of_manufac date,warrenty_in_years int,price decimal,distributor_id int,foreign key(distributor_id) references distributor(distributor_id));
+create table sales_info(sales_ID int primary key,sales_date date,IME_no int,price int,discount int,net_amount int,customer_id int,model_name varchar(30),foreign key(IME_no) references mobile_master(IME_no),foreign key(customer_id) references customer_info(customer_id));
+create table mobile_specification(IME_no int primary key,dimension varchar(30),weight varchar(30),display_type varchar(30),display_size int,internal_mem_in_MB int,memory_card_capacity int,network_3g varchar(30),GPRS varchar(30),EDGE varchar(30),blutooth varchar(30),camera varchar(30),camera_quality varchar(30),OS varchar(30),battery_life_hrs int,foreign key(IME_no) references mobile_master(IME_no));
+
